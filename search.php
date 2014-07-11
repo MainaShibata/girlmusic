@@ -15,7 +15,7 @@
   </header>
   <form method="post">
     <input type="text" placeholder="アーティスト名、曲名">
-    <input type="submit">
+    <input type="submit" value="検索">
   </form>
 </body>
 </html>
