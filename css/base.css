@@ -63,12 +63,117 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* global set */
+/* button set */
 /* defalut */
-/* line 7, ../sass/base.scss */
+/* line 56, ../sass/base.scss */
 html, body {
   background: url(../img/bg.png) 0 0 no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
-  color: #ffffff;
+  color: white;
+}
+
+/* module */
+/* line 67, ../sass/base.scss */
+.pages header {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  box-shadow: 0 2px 3px #8f5fe9;
+}
+/* line 72, ../sass/base.scss */
+.pages header img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 3% 0;
+}
+
+/* index */
+/* line 82, ../sass/base.scss */
+.index {
+  position: relative;
+}
+/* line 85, ../sass/base.scss */
+.index h1 img {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-top: 50%;
+}
+/* line 92, ../sass/base.scss */
+.index footer {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+/* line 97, ../sass/base.scss */
+.index footer p {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+/* search */
+/* line 108, ../sass/base.scss */
+.search input[type="text"] {
+  display: block;
+  color: white;
+  width: 86%;
+  margin: 10px 4%;
+  border: none;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 3px #8f5fe9;
+}
+/* line 111, ../sass/base.scss */
+.search input[type="submit"] {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.7em;
+  color: #af77ff;
+  width: 90%;
+  margin: 10px 5%;
+  padding: 5px 2%;
+  border: medium none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+/* line 115, ../sass/base.scss */
+.search form {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+/* line 120, ../sass/base.scss */
+.search form:before {
+  content: "";
+  display: block;
+  background: url(../img/search.png) no-repeat;
+  background-size: contain;
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+  position: absolute;
+  top: 120px;
+  left: 26%;
+}
+/* line 131, ../sass/base.scss */
+.search form:after {
+  content: "";
+  display: block;
+  content: "search Girlmics";
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  position: absolute;
+  top: 300px;
 }
