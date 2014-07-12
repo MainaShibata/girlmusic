@@ -9,6 +9,7 @@
 $shadow-p: 0 2px 3px #8f5fe9;
 $color:#ffffff;
 $color-p:#af77ff;
+$color-op:#ffe2ff;
 
 @mixin psedo{
   content:"";
@@ -38,6 +39,7 @@ $color-p:#af77ff;
   @include btn-set;
   @include opa-50;
   box-shadow: $shadow-p;
+  -webkit-appearance: none;
 }
 
 @mixin btn-sub {
@@ -50,12 +52,15 @@ $color-p:#af77ff;
   padding:5px 2%;
   border:medium none;
   @include border-radius(3px);
+  -webkit-appearance: none;
 }
 
 /* defalut */
+
 html,body{
   background: url(../img/bg.png) 0 0 no-repeat;
   background-size: cover;
+  font-family:"Helvetica Neue Light","HiraginoKakuGo ProN",sans-serif;
   height: 100%;
   width: 100%;
   color:$color;
@@ -107,6 +112,15 @@ html,body{
 .search{
   input[type="text"]{
     @include btn-text;
+  }
+  input::-webkit-input-placeholder{
+    color:$color-op;
+  }
+  input:-moz-placeholder{
+    color:$color-op;
+  }
+  input:-ms-input-placeholder{
+    color:$color-op;
   }
   input[type="submit"]{
     @include btn-sub;
