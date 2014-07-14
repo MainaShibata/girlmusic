@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* defalut */
 /* line 61, ../sass/base.scss */
 html, body {
-  background: url(../img/bg.png) 0 0 no-repeat;
+  background: url(../img/bg.png) 0 0 repeat-y;
   background-size: cover;
   font-family: "Helvetica Neue Light","HiraginoKakuGo ProN",sans-serif;
   height: 100%;
@@ -249,4 +249,15 @@ html, body {
   border: medium none;
   border-radius: 0;
   box-shadow: none;
+}
+
+/* test */
+/* line 202, ../sass/base.scss */
+.test {
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* line 205, ../sass/base.scss */
+.test h2 {
+  margin: 15px 0 10px;
 }
