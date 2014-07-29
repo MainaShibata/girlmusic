@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* global set */
 /* button set */
 /* defalut */
-/* line 61, ../sass/base.scss */
+/* line 63, ../sass/base.scss */
 html, body {
   background: url(../img/bg.png) 0 0 repeat-y;
   background-size: cover;
@@ -77,13 +77,13 @@ html, body {
 }
 
 /* module */
-/* line 73, ../sass/base.scss */
+/* line 75, ../sass/base.scss */
 .pages header {
   background: rgba(255, 255, 255, 0.5);
   width: 100%;
   box-shadow: 0 2px 3px #8f5fe9;
 }
-/* line 78, ../sass/base.scss */
+/* line 80, ../sass/base.scss */
 .pages header img {
   display: block;
   width: 30%;
@@ -92,25 +92,25 @@ html, body {
 }
 
 /* index */
-/* line 88, ../sass/base.scss */
+/* line 90, ../sass/base.scss */
 .index {
   position: relative;
 }
-/* line 91, ../sass/base.scss */
+/* line 93, ../sass/base.scss */
 .index h1 img {
   display: block;
   width: 50%;
   margin: auto;
   padding-top: 50%;
 }
-/* line 98, ../sass/base.scss */
+/* line 100, ../sass/base.scss */
 .index footer {
   display: block;
   width: 100%;
   position: absolute;
   bottom: 20px;
 }
-/* line 103, ../sass/base.scss */
+/* line 105, ../sass/base.scss */
 .index footer p {
   font-size: 12px;
   text-align: center;
@@ -118,10 +118,11 @@ html, body {
 }
 
 /* search */
-/* line 114, ../sass/base.scss */
+/* line 116, ../sass/base.scss */
 .search input[type="text"] {
   display: block;
   color: white;
+  font-size: 1.1em;
   width: 86%;
   margin: 10px 4%;
   border: none;
@@ -130,24 +131,25 @@ html, body {
   box-shadow: 0 2px 3px #8f5fe9;
   -webkit-appearance: none;
 }
-/* line 117, ../sass/base.scss */
+/* line 119, ../sass/base.scss */
 .search input::-webkit-input-placeholder {
   color: #ffe2ff;
 }
-/* line 120, ../sass/base.scss */
+/* line 122, ../sass/base.scss */
 .search input:-moz-placeholder {
   color: #ffe2ff;
 }
-/* line 123, ../sass/base.scss */
+/* line 125, ../sass/base.scss */
 .search input:-ms-input-placeholder {
   color: #ffe2ff;
 }
-/* line 126, ../sass/base.scss */
+/* line 128, ../sass/base.scss */
 .search input[type="submit"] {
   background: white;
   background: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.7em;
   color: #af77ff;
+  font-size: 1.1em;
   width: 90%;
   margin: 10px 5%;
   padding: 5px 2%;
@@ -160,13 +162,13 @@ html, body {
   -webkit-appearance: none;
   margin-top: 5px;
 }
-/* line 130, ../sass/base.scss */
+/* line 132, ../sass/base.scss */
 .search form {
   width: 100%;
   margin-top: 40px;
   position: relative;
 }
-/* line 135, ../sass/base.scss */
+/* line 137, ../sass/base.scss */
 .search form:before {
   content: "";
   display: block;
@@ -179,7 +181,7 @@ html, body {
   top: 120px;
   left: 26%;
 }
-/* line 146, ../sass/base.scss */
+/* line 148, ../sass/base.scss */
 .search form:after {
   content: "";
   display: block;
@@ -194,10 +196,11 @@ html, body {
 }
 
 /* result */
-/* line 161, ../sass/base.scss */
+/* line 163, ../sass/base.scss */
 .result input[type="text"] {
   display: block;
   color: white;
+  font-size: 1.1em;
   width: 86%;
   margin: 10px 4%;
   border: none;
@@ -206,11 +209,11 @@ html, body {
   box-shadow: 0 2px 3px #8f5fe9;
   -webkit-appearance: none;
 }
-/* line 164, ../sass/base.scss */
+/* line 166, ../sass/base.scss */
 .result li {
   padding-bottom: 7px;
 }
-/* line 166, ../sass/base.scss */
+/* line 168, ../sass/base.scss */
 .result li img {
   width: 20%;
   height: 20%;
@@ -223,17 +226,17 @@ html, body {
   border-radius: 50%;
   box-shadow: 0 2px 3px #8f5fe9;
 }
-/* line 175, ../sass/base.scss */
+/* line 177, ../sass/base.scss */
 .result li.on {
   border-bottom: solid 2px #c879e2;
   box-shadow: 0 1px 3px rgba(143, 95, 233, 0.7);
   position: relative;
 }
-/* line 179, ../sass/base.scss */
+/* line 181, ../sass/base.scss */
 .result li.on img {
   border: solid 2px white;
 }
-/* line 182, ../sass/base.scss */
+/* line 184, ../sass/base.scss */
 .result li.on .share {
   display: block;
   width: 40px;
@@ -242,7 +245,7 @@ html, body {
   bottom: 0;
   right: 0;
 }
-/* line 189, ../sass/base.scss */
+/* line 191, ../sass/base.scss */
 .result li.on .share img {
   width: 25px;
   height: 25px;
@@ -252,12 +255,12 @@ html, body {
 }
 
 /* test */
-/* line 202, ../sass/base.scss */
+/* line 204, ../sass/base.scss */
 .test {
   font-size: 14px;
   line-height: 1.7;
 }
-/* line 205, ../sass/base.scss */
+/* line 207, ../sass/base.scss */
 .test h2 {
   margin: 15px 0 10px;
 }
