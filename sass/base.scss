@@ -30,6 +30,7 @@ $color-op:#ffe2ff;
 @mixin btn-set {
   display: block;
   color: $color;
+  font-size: 1.1em;
   width:86%;
   margin:10px 4%;
   border:none;
@@ -48,6 +49,7 @@ $color-op:#ffe2ff;
   @include opa-80;
   letter-spacing: 0.7em;
   color: $color-p;
+  font-size: 1.1em;
   width: 90%;
   margin:10px 5%;
   padding:5px 2%;
@@ -59,7 +61,7 @@ $color-op:#ffe2ff;
 /* defalut */
 
 html,body{
-  background: url(../img/bg.png) 0 0 no-repeat;
+  background: url(../img/bg.png) 0 0 repeat-y;
   background-size: cover;
   font-family:"Helvetica Neue Light","HiraginoKakuGo ProN",sans-serif;
   height: 100%;
@@ -192,7 +194,17 @@ html,body{
         border:medium none;
         border-radius:0;
         box-shadow:none;
-      }
-    }
+      }//img end
+    }//share end
+  }
+}//result end
+
+/* test */
+
+.test{
+  font-size:14px;
+  line-height:1.7;
+  h2{
+    margin:15px 0 10px;
   }
 }

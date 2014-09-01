@@ -1,0 +1,266 @@
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* global set */
+/* button set */
+/* defalut */
+/* line 63, ../sass/base.scss */
+html, body {
+  background: url(../img/bg.png) 0 0 repeat-y;
+  background-size: cover;
+  font-family: "Helvetica Neue Light","HiraginoKakuGo ProN",sans-serif;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+/* module */
+/* line 75, ../sass/base.scss */
+.pages header {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  box-shadow: 0 2px 3px #8f5fe9;
+}
+/* line 80, ../sass/base.scss */
+.pages header img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 3% 0;
+}
+
+/* index */
+/* line 90, ../sass/base.scss */
+.index {
+  position: relative;
+}
+/* line 93, ../sass/base.scss */
+.index h1 img {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-top: 50%;
+}
+/* line 100, ../sass/base.scss */
+.index footer {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+/* line 105, ../sass/base.scss */
+.index footer p {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+/* search */
+/* line 116, ../sass/base.scss */
+.search input[type="text"] {
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  width: 86%;
+  margin: 10px 4%;
+  border: none;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 3px #8f5fe9;
+  -webkit-appearance: none;
+}
+/* line 119, ../sass/base.scss */
+.search input::-webkit-input-placeholder {
+  color: #ffe2ff;
+}
+/* line 122, ../sass/base.scss */
+.search input:-moz-placeholder {
+  color: #ffe2ff;
+}
+/* line 125, ../sass/base.scss */
+.search input:-ms-input-placeholder {
+  color: #ffe2ff;
+}
+/* line 128, ../sass/base.scss */
+.search input[type="submit"] {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.7em;
+  color: #af77ff;
+  font-size: 1.1em;
+  width: 90%;
+  margin: 10px 5%;
+  padding: 5px 2%;
+  border: medium none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  margin-top: 5px;
+}
+/* line 132, ../sass/base.scss */
+.search form {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+/* line 137, ../sass/base.scss */
+.search form:before {
+  content: "";
+  display: block;
+  background: url(../img/search.png) no-repeat;
+  background-size: contain;
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+  position: absolute;
+  top: 120px;
+  left: 26%;
+}
+/* line 148, ../sass/base.scss */
+.search form:after {
+  content: "";
+  display: block;
+  content: "search Girlmics";
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  position: absolute;
+  top: 300px;
+}
+
+/* result */
+/* line 163, ../sass/base.scss */
+.result input[type="text"] {
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  width: 86%;
+  margin: 10px 4%;
+  border: none;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 3px #8f5fe9;
+  -webkit-appearance: none;
+}
+/* line 166, ../sass/base.scss */
+.result li {
+  padding-bottom: 7px;
+}
+/* line 168, ../sass/base.scss */
+.result li img {
+  width: 20%;
+  height: 20%;
+  margin: 8px 0 0 5%;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px #8f5fe9;
+}
+/* line 177, ../sass/base.scss */
+.result li.on {
+  border-bottom: solid 2px #c879e2;
+  box-shadow: 0 1px 3px rgba(143, 95, 233, 0.7);
+  position: relative;
+}
+/* line 181, ../sass/base.scss */
+.result li.on img {
+  border: solid 2px white;
+}
+/* line 184, ../sass/base.scss */
+.result li.on .share {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 191, ../sass/base.scss */
+.result li.on .share img {
+  width: 25px;
+  height: 25px;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* test */
+/* line 204, ../sass/base.scss */
+.test {
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* line 207, ../sass/base.scss */
+.test h2 {
+  margin: 15px 0 10px;
+}
