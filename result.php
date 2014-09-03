@@ -43,10 +43,10 @@ $result = curl_exec($ch);
 
 //response xmlを読み込んで配列に入れる
 
-//$responseXml = @simplexml_load_file($result);
-//var_dump($responseXml);
+$obj = simplexml_load_string($result);
 
-//var_dump($responseXml->responses->response->album);
+$album = $obj->response->album;
+$title = array();
 
 ?>
 <!DOCTYPE html>
@@ -77,8 +77,9 @@ $result = curl_exec($ch);
     </li>
   </ul>
   <?php 
-  var_dump($result);
-  var_dump($title);
+  //print_r ($result);
+  //var_dump($album);
+  var_dump($obj);
   ?>
 </body>
 </html>
