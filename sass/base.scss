@@ -163,16 +163,32 @@ html,body{
   input[type="text"]{
     @include btn-text;
   }
+  p{
+    margin:10px 5%;
+  }
   li{
     padding-bottom:7px;
     img{
-      width:20%;
-      height:20%;
+      display:inline-block;
+      width:60px;
+      height:60px;
       margin:8px 0 0 5%;
       border:solid 2px rgba(255,255,255,0.5);
       @include border-radius(50%);
       box-shadow:$shadow-p;
+      float: left;
     }
+    p{
+      line-height: 1.5;
+      max-width: 220px;
+      margin-top: 15px;
+      float:left;
+    }
+  }
+  li:after{
+    content:"";
+    display:block;
+    clear: both;
   }
   li.on{
     border-bottom:solid 2px #c879e2;
@@ -196,6 +212,16 @@ html,body{
         box-shadow:none;
       }//img end
     }//share end
+  }
+  a{
+    display:inline-block;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    border: medium none;
+    border-radius: 5px;
+    color: #af77ff;
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 10px;
   }
 }//result end
 

@@ -210,13 +210,18 @@ html, body {
   -webkit-appearance: none;
 }
 /* line 166, ../sass/base.scss */
+.result p {
+  margin: 10px 5%;
+}
+/* line 169, ../sass/base.scss */
 .result li {
   padding-bottom: 7px;
 }
-/* line 168, ../sass/base.scss */
+/* line 171, ../sass/base.scss */
 .result li img {
-  width: 20%;
-  height: 20%;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
   margin: 8px 0 0 5%;
   border: solid 2px rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 50%;
@@ -225,18 +230,32 @@ html, body {
   -o-border-radius: 50%;
   border-radius: 50%;
   box-shadow: 0 2px 3px #8f5fe9;
+  float: left;
 }
-/* line 177, ../sass/base.scss */
+/* line 181, ../sass/base.scss */
+.result li p {
+  line-height: 1.5;
+  max-width: 220px;
+  margin-top: 15px;
+  float: left;
+}
+/* line 188, ../sass/base.scss */
+.result li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 193, ../sass/base.scss */
 .result li.on {
   border-bottom: solid 2px #c879e2;
   box-shadow: 0 1px 3px rgba(143, 95, 233, 0.7);
   position: relative;
 }
-/* line 181, ../sass/base.scss */
+/* line 197, ../sass/base.scss */
 .result li.on img {
   border: solid 2px white;
 }
-/* line 184, ../sass/base.scss */
+/* line 200, ../sass/base.scss */
 .result li.on .share {
   display: block;
   width: 40px;
@@ -245,7 +264,7 @@ html, body {
   bottom: 0;
   right: 0;
 }
-/* line 191, ../sass/base.scss */
+/* line 207, ../sass/base.scss */
 .result li.on .share img {
   width: 25px;
   height: 25px;
@@ -253,14 +272,25 @@ html, body {
   border-radius: 0;
   box-shadow: none;
 }
+/* line 216, ../sass/base.scss */
+.result a {
+  display: inline-block;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+  border: medium none;
+  border-radius: 5px;
+  color: #af77ff;
+  font-size: 1em;
+  margin: 10px 0;
+  padding: 10px;
+}
 
 /* test */
-/* line 204, ../sass/base.scss */
+/* line 230, ../sass/base.scss */
 .test {
   font-size: 14px;
   line-height: 1.7;
 }
-/* line 207, ../sass/base.scss */
+/* line 233, ../sass/base.scss */
 .test h2 {
   margin: 15px 0 10px;
 }

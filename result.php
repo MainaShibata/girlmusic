@@ -21,7 +21,7 @@ $textNode->addAttribute('TYPE','ARTIST');
 
 $optionNode = $itemNode->addChild('OPTION');
 $optionNode->addChild('PARAMETER','SELECT_EXTENDED');
-$optionNode->addChild('VALUE','COVER,REVIEW,ARTIST_BIOGRAPHY,ARTIST_IMAGE,ARTIST_OET,MOOD,TEMPO');
+$optionNode->addChild('VALUE','COVER,ARTIST_IMAGE,ARTIST_OET,MOOD');
 
 $optionNode = $itemNode->addChild('OPTION');
 $optionNode->addChild('PARAMETER','SELECT_DETAIL');
@@ -45,8 +45,11 @@ $result = curl_exec($ch);
 
 $obj = simplexml_load_string($result);
 
-$album = $obj->response->album;
-$title = array();
+$album = $obj->RESPONSE->ALBUM;
+foreach($album as $a){
+$title[] = $a->TITLE;
+$cover_url[] = $a->URL;
+}
 
 ?>
 <!DOCTYPE html>
@@ -61,25 +64,25 @@ $title = array();
   <header>
   <h1><img src="img/logo.png"></h1>
   </header>
-  <form action="result_submit" method="get" accept-charset="utf-8">
-    <input type="text">
-  </form>
+  <p>アーティスト"<?php echo $artist ?>"の検索結果</p>
   <ul>
-    <li class="on">
+ <!--   <li class="on">
       <img src="http://lorempixel.com/200/200/fashion">
       <div class="share"><img src="img/icon_share.png"></div>
-    </li>
-    <li>
-      <img src="http://lorempixel.com/200/200/fashion">
-    </li>
-    <li>
-      <img src="http://lorempixel.com/200/200/fashion">
-    </li>
+    </li>-->
+    <?php
+    $m = "";
+    for($i=0; $i<10; $i++){ 
+      $m = $m."<li><img src=\"". $cover_url[$i] ."\" alt=\"\"><p>". $title[$i] ."</p></li>";
+    }
+    echo $m;
+    ?>
   </ul>
+  <p><a href="search.php">戻る</a></p>
   <?php 
-  //print_r ($result);
-  //var_dump($album);
-  var_dump($obj);
+  //var_dump($result);
+  //var_dump($cover_url);
+  //var_dump($obj);
   ?>
 </body>
 </html>
